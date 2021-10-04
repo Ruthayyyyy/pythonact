@@ -212,7 +212,7 @@ while character_health > 0:
 
             print("Health:" + str (character_health) +" Defense:" + str (attack) + " Attack:" + str (defense)+"\n")
 
-            print("The Moster is approaching!")
+            print("The Monster is approaching!")
 
             while character_health > 0:
 
