@@ -27,8 +27,8 @@ name = input("Enter your name: ")
 print("Hello " + name)
 
 
-v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to jump on the ravine\nInput: "))
-
+v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to jump on the ravine\nChoose 3 if you want to fight monster in the dungeon \nInput: "))
+    
 if v == 1:
 
     print("You have crossed the river")
@@ -65,8 +65,6 @@ while character_health > 0:
              print("Your character's health is back to " + str(character_health))
 
 
-
-    v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to jump on the ravine\nChoose 3 if you want to fight monster in the dungeon \nInput: "))
 
 
     #Start of Journey
@@ -255,5 +253,4 @@ while character_health > 0:
 
 
 print("Your Character is dead!")
-
 
