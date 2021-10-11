@@ -65,7 +65,7 @@ elif v == 2:
 
 elif v == 3:
 
-        #damages the monster
+        #attack the monster
 
         print("You have entered the dungeon")
 
