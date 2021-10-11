@@ -114,7 +114,7 @@ while character_health > 0:
         print("You have entered the dungeon")
 
 
-        hero = int(input("What character do you want to be?\n Choose from: \n [1] Lancelot \n [2] Hanabi \n [3] Gusion \n Choice:"))
+        hero = int(input("Choose from the following hero options:\n Choose from: \n [1] Lancelot \n [2] Hanabi \n [3] Gusion \n Choice:"))
 
         #Lancelot
 
@@ -130,7 +130,7 @@ while character_health > 0:
 
                 if monster_health != 0:
 
-                    action = int(input("\n" +"What do you want to do?\n [1] Attack \n [2]Leave Game \n Action:" ))
+                    action = int(input("\n" +"Therefore, what's your strategy?\n [1] Attack \n [2]Leave Game \n Action:" ))
 
                     if action == 1:
 
@@ -170,7 +170,7 @@ while character_health > 0:
 
                 if monster_health != 0:
 
-                    action = int(input("\n" +"What do you want to do?\n [1] Attack \n [2]Leave Game \n Action:" ))
+                    action = int(input("\n" +"Therefore, what's your strategy?\n [1] Attack \n [2]Leave Game \n Action:" ))
 
                     if action == 1:
 
@@ -210,7 +210,7 @@ while character_health > 0:
 
                 if monster_health != 0:
 
-                    action = int(input("\n" +"What do you want to do?\n [1] Attack \n [2]Leave Game \n Action:" ))
+                    action = int(input("\n" +"Therefore, what's your strategy?\n [1] Attack \n [2]Leave Game \n Action:" ))
 
                     if action == 1:
 
