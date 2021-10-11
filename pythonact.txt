@@ -12,10 +12,6 @@ attack3 = 40
 
 defense = 15
 
-health = 0
-
-health2 = 0
-
 item = ""
 
 
@@ -57,8 +53,7 @@ if v == 1:
             print("You have crossed the river")
 
 
-
-    elif v == 2:
+elif v == 2:
 
         #damages the player
 
@@ -68,15 +63,14 @@ if v == 1:
 
         current_health = current_health - 10
 
-
-    elif v == 3:
+elif v == 3:
 
         #damages the monster
 
         print("You have entered the dungeon")
 
 
-        hero = int(input("Choose from the following hero options:\n Choose from: \n [1] Lancelot \n [2] Hanabi \n [3] Gusion \n Choice:"))
+        hero = int(input("Choose from the following hero options:\n Choose from: \n [1]Lancelot \n [2]Hanabi \n [3]Gusion \nChoice:"))
 
         #Lancelot
 
@@ -92,7 +86,7 @@ if v == 1:
 
                 if monster_health != 0:
 
-                    action = int(input("\n" +"Therefore, what's your strategy?\n [1] Attack \n [2]Leave Game \n Action:" ))
+                    action = int(input("\n" +"Therefore, what's your strategy?\n [1]Attack \n [2]Leave Game \nAction:" ))
 
                     if action == 1:
 
@@ -132,7 +126,7 @@ if v == 1:
 
                 if monster_health != 0:
 
-                    action = int(input("\n" +"Therefore, what's your strategy?\n [1] Attack \n [2]Leave Game \n Action:" ))
+                    action = int(input("\n" +"Therefore, what's your strategy?\n [1]Attack \n [2]Leave Game \nAction:" ))
 
                     if action == 1:
 
@@ -172,7 +166,7 @@ if v == 1:
 
                 if monster_health != 0:
 
-                    action = int(input("\n" +"Therefore, what's your strategy?\n [1] Attack \n [2]Leave Game \n Action:" ))
+                    action = int(input("\n" +"Therefore, what's your strategy?\n [1]Attack \n [2]Leave Game \nAction:" ))
 
                     if action == 1:
 
@@ -198,12 +192,12 @@ if v == 1:
 
                 
 
-    else:
+            else:
 
-        print("Invalid input")
+             print("Invalid input")
 
 
-    print("Your character's Health: " + str(current_health))
+            print("Your character's Health: " + str(current_health))
 
 
 print("Your Character is dead!")
