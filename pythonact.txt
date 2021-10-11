@@ -1,6 +1,6 @@
 import random
 
-character_health = 100
+current_health = 100
 
 monster_health = 100
 
@@ -29,7 +29,7 @@ v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to 
     
     #Start of Journey
 
-    if v == 1: 
+if v == 1: 
 
         choice = input("If you want to go fishing select [1 for yes/ 0 for no]")
 
@@ -66,7 +66,7 @@ v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to 
 
         print("Your character has taken 10pt of damage")
 
-        character_health = character_health - 10
+        current_health = current_health - 10
 
 
     elif v == 3:
@@ -84,11 +84,11 @@ v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to 
 
             print("You have selected Lancelot.")
 
-            print(str (name)+"'s " + "Health:" + str (character_health) + " Attack:" + str (attack) +"\n")
+            print(str (name)+"'s " + "Health:" + str (current_health) + " Attack:" + str (attack) +"\n")
 
             print("A Monster is preparing to attack! \n")
 
-            while character_health >0:
+            while current_health >0:
 
                 if monster_health != 0:
 
@@ -98,13 +98,13 @@ v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to 
 
                             monster_health -= 25
 
-                            print("\n" + str (name)+" :" + str (character_health) +" Monster:"+ str (monster_health))
+                            print("\n" + str (name)+" :" + str (current_health) +" Monster:"+ str (monster_health))
 
                             print("\n The Monster is preparing to attack! \n")
 
-                            character_health -=15
+                            current_health -=15
 
-                            print("\n" +str (name)+" :" + str (character_health) +" Monster:"+ str (monster_health))
+                            print("\n" +str (name)+" :" + str (current_health) +" Monster:"+ str (monster_health))
 
                     elif action == 2:
 
@@ -112,7 +112,7 @@ v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to 
 
                 elif monster_health == 0:
 
-                    print("\n" +str (name)+"'s " + "Health:" + str (character_health) + " Attack:" + str (attack) +"\n")
+                    print("\n" +str (name)+"'s " + "Health:" + str (current_health) + " Attack:" + str (attack) +"\n")
 
                     print("Congratulations!! You have defeated the Monster!\n")
 
@@ -124,11 +124,11 @@ v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to 
 
             print("You have selected Hanabi.")  
 
-            print("Health:" + str (character_health) +" Defense:" + str (attack) + " Attack:" + str (defense)+"\n")
+            print("Health:" + str (current_health) +" Defense:" + str (attack) + " Attack:" + str (defense)+"\n")
 
             print("A Monster is preparing to attack!")  
 
-            while character_health >0:
+            while current_health >0:
 
                 if monster_health != 0:
 
@@ -138,13 +138,13 @@ v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to 
 
                             monster_health -= 25
 
-                            print("\n" +str (name)+" :" + str (character_health) +" Monster:"+ str (monster_health))
+                            print("\n" +str (name)+" :" + str (current_health) +" Monster:"+ str (monster_health))
 
                             print("\n The Monster is preparing to attack! \n")
 
-                            character_health -=15
+                            current_health -=15
 
-                            print("\n" +str (name)+" :" + str (character_health) +" Monster:"+ str (monster_health))
+                            print("\n" +str (name)+" :" + str (current_health) +" Monster:"+ str (monster_health))
 
                     elif action == 2:
 
@@ -164,11 +164,11 @@ v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to 
 
             print("You have selected Gusion.") 
 
-            print("Health:" + str (character_health) +" Defense:" + str (attack) + " Attack:" + str (defense)+"\n")
+            print("Health:" + str (current_health) +" Defense:" + str (attack) + " Attack:" + str (defense)+"\n")
 
             print("A Monster is preparing to attack!")
 
-            while character_health > 0:
+            while current_health > 0:
 
                 if monster_health != 0:
 
@@ -178,13 +178,13 @@ v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to 
 
                             monster_health -= 25
 
-                            print("\n" +str (name)+" :" + str (character_health) +" Monster:"+ str (monster_health))
+                            print("\n" +str (name)+" :" + str (current_health) +" Monster:"+ str (monster_health))
 
                             print("\n The Monster is preparing to attack! \n")
 
-                            character_health -= 15
+                            current_health -= 15
 
-                            print("\n" +str (name)+" :" + str (character_health) +" Monster:"+ str (monster_health))
+                            print("\n" +str (name)+" :" + str (current_health) +" Monster:"+ str (monster_health))
 
                     elif action == 2:
 
@@ -203,7 +203,7 @@ v = int(input("Choose 1 if you want to cross the river\nChoose 2 if you want to 
         print("Invalid input")
 
 
-    print("Your character's Health: " + str(character_health))
+    print("Your character's Health: " + str(current_health))
 
 
 print("Your Character is dead!")
