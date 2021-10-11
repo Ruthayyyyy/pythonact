@@ -1,7 +1,5 @@
 import random
 
-import time
-
 character_health = 100
 
 monster_health = 100
@@ -126,7 +124,7 @@ while character_health > 0:
 
             print(str (name)+"'s " + "Health:" + str (character_health) + " Attack:" + str (attack) +"\n")
 
-            print("The Monster is approaching! \n")
+            print("A Monster is preparing to attack! \n")
 
             while character_health >0:
 
@@ -141,8 +139,6 @@ while character_health > 0:
                             print("\n" + str (name)+" :" + str (character_health) +" Monster:"+ str (monster_health))
 
                             print("\n The Monster is preparing to attack! \n")
-
-                            time.sleep(3)
 
                             character_health -=15
 
@@ -168,7 +164,7 @@ while character_health > 0:
 
             print("Health:" + str (character_health) +" Defense:" + str (attack) + " Attack:" + str (defense)+"\n")
 
-            print("The Monster is approaching!")  
+            print("A Monster is preparing to attack!")  
 
             while character_health >0:
 
@@ -183,8 +179,6 @@ while character_health > 0:
                             print("\n" +str (name)+" :" + str (character_health) +" Monster:"+ str (monster_health))
 
                             print("\n The Monster is preparing to attack! \n")
-
-                            time.sleep(3)
 
                             character_health -=15
 
@@ -210,7 +204,7 @@ while character_health > 0:
 
             print("Health:" + str (character_health) +" Defense:" + str (attack) + " Attack:" + str (defense)+"\n")
 
-            print("The Monster is approaching!")
+            print("A Monster is preparing to attack!")
 
             while character_health > 0:
 
@@ -225,8 +219,6 @@ while character_health > 0:
                             print("\n" +str (name)+" :" + str (character_health) +" Monster:"+ str (monster_health))
 
                             print("\n The Monster is preparing to attack! \n")
-
-                            time.sleep(1)
 
                             character_health -= 15
 
